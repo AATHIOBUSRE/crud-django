@@ -35,8 +35,8 @@ This is a web-based **Contact Management Application** built using the **Django 
 
 ```bash
 # 1. Clone the repository (or download ZIP)
-git clone https://github.com/your-username/crud-django.git
-cd contact_manager
+[git clone https://github.com/your-username/crud-django.git](https://github.com/AATHIOBUSRE/crud-django/
+cd crud-django
 
 # 2. Activate environment (if using Anaconda)
 conda activate base
