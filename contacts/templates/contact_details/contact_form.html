@@ -1,0 +1,31 @@
+{% extends "contact_details/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="card-sky shadow-sm p-4 rounded">
+
+    <h4 class="mb-4 text-primary fw-semibold">
+      <i class="fas fa-user-edit"></i> Contact Form
+    </h4>
+
+    <form method="post" autocomplete="off">
+      {% csrf_token %}
+      {{ form|crispy }}
+
+      <div class="row mt-4">
+        <div class="col-md-12 d-flex justify-content-between">
+          <button type="submit" class="btn btn-success">
+            <i class="fas fa-database"></i> Submit
+          </button>
+
+          <a href="{% url 'contact_list' %}" class="btn btn-secondary">
+            <i class="fas fa-bars"></i> Back to List
+          </a>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+{% endblock content %}
